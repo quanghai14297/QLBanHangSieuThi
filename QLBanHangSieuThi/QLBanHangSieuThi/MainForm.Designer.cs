@@ -61,6 +61,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
@@ -525,6 +526,7 @@
             // 
             // line1
             // 
+            this.line1.BackColor = System.Drawing.Color.White;
             this.line1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(73)))), ((int)(((byte)(76)))));
             this.line1.Location = new System.Drawing.Point(235, 39);
             this.line1.Name = "line1";
@@ -534,6 +536,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(235, 50);
             this.panel4.Name = "panel4";
