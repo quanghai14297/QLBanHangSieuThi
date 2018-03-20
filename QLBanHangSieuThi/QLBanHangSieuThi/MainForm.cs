@@ -31,5 +31,15 @@ namespace QLBanHangSieuThi
         {
 
         }
+
+        private void btexit_Click(object sender, MouseEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void minimize_Click(object sender, MouseEventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

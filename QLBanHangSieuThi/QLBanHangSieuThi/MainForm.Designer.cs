@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.minimize = new System.Windows.Forms.Panel();
             this.btexit = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton9 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -67,7 +67,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.minimize);
             this.panel2.Controls.Add(this.btexit);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(235, 0);
@@ -139,15 +139,16 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Hỗ trợ";
             // 
-            // panel6
+            // minimize
             // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel6.Location = new System.Drawing.Point(583, 10);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(30, 30);
-            this.panel6.TabIndex = 2;
+            this.minimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minimize.BackgroundImage")));
+            this.minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimize.Location = new System.Drawing.Point(583, 10);
+            this.minimize.Name = "minimize";
+            this.minimize.Size = new System.Drawing.Size(30, 30);
+            this.minimize.TabIndex = 2;
+            this.minimize.MouseClick += new System.Windows.Forms.MouseEventHandler(this.minimize_Click);
             // 
             // btexit
             // 
@@ -159,6 +160,7 @@
             this.btexit.Name = "btexit";
             this.btexit.Size = new System.Drawing.Size(30, 30);
             this.btexit.TabIndex = 2;
+            this.btexit.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btexit_Click);
             // 
             // panel1
             // 
@@ -558,7 +560,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel minimize;
         private System.Windows.Forms.Panel btexit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
