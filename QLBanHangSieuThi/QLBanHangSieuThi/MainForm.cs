@@ -12,9 +12,24 @@ namespace QLBanHangSieuThi
 {
     public partial class MainForm : Form
     {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                const int CS_DROPSHADOW = 0x20000;
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_DROPSHADOW;
+                return cp;
+            }
+        }
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void line1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
