@@ -53,6 +53,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.line1 = new DevComponents.DotNetBar.Controls.Line();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -72,7 +73,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(235, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(662, 50);
+            this.panel2.Size = new System.Drawing.Size(862, 50);
             this.panel2.TabIndex = 3;
             // 
             // label7
@@ -91,7 +92,7 @@
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Quicksand", 10F);
-            this.label6.Location = new System.Drawing.Point(486, 16);
+            this.label6.Location = new System.Drawing.Point(647, 16);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 21);
             this.label6.TabIndex = 7;
@@ -101,7 +102,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Ebrima", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(463, 12);
+            this.label5.Location = new System.Drawing.Point(624, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(20, 28);
             this.label5.TabIndex = 6;
@@ -112,7 +113,7 @@
             this.label4.AutoSize = true;
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Quicksand", 10F);
-            this.label4.Location = new System.Drawing.Point(408, 16);
+            this.label4.Location = new System.Drawing.Point(569, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 21);
             this.label4.TabIndex = 5;
@@ -144,7 +145,7 @@
             this.minimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minimize.BackgroundImage")));
             this.minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minimize.Location = new System.Drawing.Point(583, 10);
+            this.minimize.Location = new System.Drawing.Point(788, 7);
             this.minimize.Name = "minimize";
             this.minimize.Size = new System.Drawing.Size(30, 30);
             this.minimize.TabIndex = 2;
@@ -156,7 +157,7 @@
             this.btexit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btexit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btexit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btexit.Location = new System.Drawing.Point(615, 10);
+            this.btexit.Location = new System.Drawing.Point(820, 7);
             this.btexit.Name = "btexit";
             this.btexit.Size = new System.Drawing.Size(30, 30);
             this.btexit.TabIndex = 2;
@@ -527,15 +528,24 @@
             this.line1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(73)))), ((int)(((byte)(76)))));
             this.line1.Location = new System.Drawing.Point(235, 39);
             this.line1.Name = "line1";
-            this.line1.Size = new System.Drawing.Size(662, 23);
+            this.line1.Size = new System.Drawing.Size(862, 23);
             this.line1.TabIndex = 4;
             this.line1.Text = "line1";
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(235, 50);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(862, 470);
+            this.panel4.TabIndex = 5;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 520);
+            this.ClientSize = new System.Drawing.Size(1097, 520);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.line1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -576,6 +586,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton7;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton8;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton9;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 
