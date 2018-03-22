@@ -41,5 +41,11 @@ namespace QLBanHangSieuThi
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            panelTongquan.Controls.Clear();
+            panelTongquan.Controls.Add(new Layout.FormTongQuan());
+        }
     }
 }
