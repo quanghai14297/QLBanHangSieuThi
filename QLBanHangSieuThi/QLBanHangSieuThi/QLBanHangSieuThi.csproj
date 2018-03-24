@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Layout\FormDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layout\FormDoanhThu.Designer.cs">
+      <DependentUpon>FormDoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layout\FormDonHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -64,6 +70,12 @@
     </Compile>
     <Compile Include="Layout\FormHangHoa.Designer.cs">
       <DependentUpon>FormHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\FormKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layout\FormKhachHang.Designer.cs">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Layout\FormNhapKho.cs">
       <SubType>UserControl</SubType>
@@ -85,11 +97,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Layout\FormDoanhThu.resx">
+      <DependentUpon>FormDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Layout\FormDonHang.resx">
       <DependentUpon>FormDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layout\FormHangHoa.resx">
       <DependentUpon>FormHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\FormKhachHang.resx">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layout\FormNhapKho.resx">
       <DependentUpon>FormNhapKho.cs</DependentUpon>
