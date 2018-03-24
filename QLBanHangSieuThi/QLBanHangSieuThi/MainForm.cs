@@ -47,5 +47,17 @@ namespace QLBanHangSieuThi
             panelTongquan.Controls.Clear();
             panelTongquan.Controls.Add(new Layout.FormTongQuan());
         }
+
+        private void btdonhang_Click(object sender, EventArgs e)
+        {
+            panelTongquan.Controls.Clear();
+            panelTongquan.Controls.Add(new Layout.FormDonHang());
+        }
+
+        private void btnhapkho_Click(object sender, EventArgs e)
+        {
+            panelTongquan.Controls.Clear();
+            panelTongquan.Controls.Add(new Layout.FormNhapKho());
+        }
     }
 }
