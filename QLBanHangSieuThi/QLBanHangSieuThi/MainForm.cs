@@ -83,12 +83,16 @@ namespace QLBanHangSieuThi
 
         private void btkhuyenmai_Click(object sender, EventArgs e)
         {
+            panelTongquan.Controls.Clear();
+            panelTongquan.Controls.Add(new Layout.FormKhuyenMai());
             panelLine.Height = btkhuyenmai.Height - 2;
             panelLine.Top = btkhuyenmai.Top + 1;
         }
 
         private void btdoanhthu_Click(object sender, EventArgs e)
         {
+            panelTongquan.Controls.Clear();
+            panelTongquan.Controls.Add(new Layout.FormDoanhThu());
             panelLine.Height = btdoanhthu.Height - 2;
             panelLine.Top = btdoanhthu.Top + 1;
         }
