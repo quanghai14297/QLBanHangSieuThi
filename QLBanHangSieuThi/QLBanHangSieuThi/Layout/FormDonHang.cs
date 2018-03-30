@@ -16,5 +16,10 @@ namespace QLBanHangSieuThi.Layout
         {
             InitializeComponent();
         }
+
+        private void FormDonHang_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

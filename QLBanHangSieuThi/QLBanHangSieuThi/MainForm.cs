@@ -12,6 +12,11 @@ namespace QLBanHangSieuThi
 {
     public partial class MainForm : Form
     {
+        public MainForm()
+        {
+            InitializeComponent();
+            panelTongquan.Controls.Add(new Layout.FormTongQuan());
+        }
         protected override CreateParams CreateParams
         {
             get
@@ -21,11 +26,6 @@ namespace QLBanHangSieuThi
                 cp.ClassStyle |= CS_DROPSHADOW;
                 return cp;
             }
-        }
-        public MainForm()
-        {
-            InitializeComponent();
-            panelTongquan.Controls.Add(new Layout.FormTongQuan());
         }
 
         private void line1_Click(object sender, EventArgs e)
@@ -55,6 +55,7 @@ namespace QLBanHangSieuThi
             panelTongquan.Controls.Add(new Layout.FormDonHang());
             panelLine.Height = btdonhang.Height-2;
             panelLine.Top = btdonhang.Top+1;
+            
         }
 
         private void btnhapkho_Click(object sender, EventArgs e)

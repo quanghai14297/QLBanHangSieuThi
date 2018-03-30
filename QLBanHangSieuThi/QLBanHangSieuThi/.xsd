@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLBHSieuThiDataSet" targetNamespace="http://tempuri.org/QLBHSieuThiDataSet.xsd" xmlns:mstns="http://tempuri.org/QLBHSieuThiDataSet.xsd" xmlns="http://tempuri.org/QLBHSieuThiDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLBHSieuThiConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLBHSieuThiConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLBanHangSieuThi.Properties.Settings.GlobalReference.Default.QLBHSieuThiConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DONHANGTableAdapter" GeneratorDataComponentClassName="DONHANGTableAdapter" Name="DONHANG" UserDataComponentName="DONHANGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLBHSieuThiConnectionString (Settings)" DbObjectName="QLBHSieuThi.dbo.DONHANG" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MADONHANG, USERNAME, TENDONHANG, NGAYDAT, NGAYGIAOHANG FROM dbo.DONHANG</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MADONHANG" DataSetColumn="MADONHANG" />
+              <Mapping SourceColumn="USERNAME" DataSetColumn="USERNAME" />
+              <Mapping SourceColumn="TENDONHANG" DataSetColumn="TENDONHANG" />
+              <Mapping SourceColumn="NGAYDAT" DataSetColumn="NGAYDAT" />
+              <Mapping SourceColumn="NGAYGIAOHANG" DataSetColumn="NGAYGIAOHANG" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLBHSieuThiDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLBHSieuThiDataSet" msprop:Generator_UserDSName="QLBHSieuThiDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DONHANG" msprop:Generator_TableClassName="DONHANGDataTable" msprop:Generator_TableVarName="tableDONHANG" msprop:Generator_TablePropName="DONHANG" msprop:Generator_RowDeletingName="DONHANGRowDeleting" msprop:Generator_RowChangingName="DONHANGRowChanging" msprop:Generator_RowEvHandlerName="DONHANGRowChangeEventHandler" msprop:Generator_RowDeletedName="DONHANGRowDeleted" msprop:Generator_UserTableName="DONHANG" msprop:Generator_RowChangedName="DONHANGRowChanged" msprop:Generator_RowEvArgName="DONHANGRowChangeEvent" msprop:Generator_RowClassName="DONHANGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MADONHANG" msprop:Generator_ColumnVarNameInTable="columnMADONHANG" msprop:Generator_ColumnPropNameInRow="MADONHANG" msprop:Generator_ColumnPropNameInTable="MADONHANGColumn" msprop:Generator_UserColumnName="MADONHANG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERNAME" msprop:Generator_ColumnVarNameInTable="columnUSERNAME" msprop:Generator_ColumnPropNameInRow="USERNAME" msprop:Generator_ColumnPropNameInTable="USERNAMEColumn" msprop:Generator_UserColumnName="USERNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TENDONHANG" msprop:Generator_ColumnVarNameInTable="columnTENDONHANG" msprop:Generator_ColumnPropNameInRow="TENDONHANG" msprop:Generator_ColumnPropNameInTable="TENDONHANGColumn" msprop:Generator_UserColumnName="TENDONHANG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NGAYDAT" msprop:Generator_ColumnVarNameInTable="columnNGAYDAT" msprop:Generator_ColumnPropNameInRow="NGAYDAT" msprop:Generator_ColumnPropNameInTable="NGAYDATColumn" msprop:Generator_UserColumnName="NGAYDAT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NGAYGIAOHANG" msprop:Generator_ColumnVarNameInTable="columnNGAYGIAOHANG" msprop:Generator_ColumnPropNameInRow="NGAYGIAOHANG" msprop:Generator_ColumnPropNameInTable="NGAYGIAOHANGColumn" msprop:Generator_UserColumnName="NGAYGIAOHANG" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.minimize = new System.Windows.Forms.Panel();
             this.btexit = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelLine = new System.Windows.Forms.Panel();
             this.btdoanhthu = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btkhuyenmai = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -52,7 +52,6 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.line1 = new DevComponents.DotNetBar.Controls.Line();
             this.panelTongquan = new System.Windows.Forms.Panel();
-            this.panelLine = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -62,9 +61,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
@@ -76,44 +74,33 @@
             this.panel2.Size = new System.Drawing.Size(1046, 50);
             this.panel2.TabIndex = 3;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Ebrima", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(270, 11);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 28);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "/";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Font = new System.Drawing.Font("Quicksand", 10F);
-            this.label7.Location = new System.Drawing.Point(206, 16);
+            this.label7.Location = new System.Drawing.Point(209, 16);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 21);
             this.label7.TabIndex = 8;
             this.label7.Text = "Hotline";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label6.Font = new System.Drawing.Font("Quicksand", 10F);
-            this.label6.Location = new System.Drawing.Point(647, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 21);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Register";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Ebrima", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(624, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 28);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "/";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Quicksand", 10F);
-            this.label4.Location = new System.Drawing.Point(569, 16);
+            this.label4.Location = new System.Drawing.Point(296, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 21);
             this.label4.TabIndex = 5;
@@ -180,6 +167,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(235, 520);
             this.panel1.TabIndex = 2;
+            // 
+            // panelLine
+            // 
+            this.panelLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(59)))), ((int)(((byte)(87)))));
+            this.panelLine.Location = new System.Drawing.Point(218, 52);
+            this.panelLine.Name = "panelLine";
+            this.panelLine.Size = new System.Drawing.Size(17, 49);
+            this.panelLine.TabIndex = 15;
             // 
             // btdoanhthu
             // 
@@ -478,14 +473,6 @@
             this.panelTongquan.Size = new System.Drawing.Size(1042, 470);
             this.panelTongquan.TabIndex = 5;
             // 
-            // panelLine
-            // 
-            this.panelLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(59)))), ((int)(((byte)(87)))));
-            this.panelLine.Location = new System.Drawing.Point(218, 52);
-            this.panelLine.Name = "panelLine";
-            this.panelLine.Size = new System.Drawing.Size(17, 49);
-            this.panelLine.TabIndex = 15;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,8 +498,6 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -532,6 +517,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btdoanhthu;
         private System.Windows.Forms.Panel panelTongquan;
         private System.Windows.Forms.Panel panelLine;
+        private System.Windows.Forms.Label label5;
     }
 }
 
